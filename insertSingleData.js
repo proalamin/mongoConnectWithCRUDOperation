@@ -1,14 +1,14 @@
 const {client}=require('./dbConfig');
 
 const insertSingleData=async()=>{
-    try{
+    try {
         const database = client.db("team");
-        const users = database.collection("dev_team");
+        const users = database.collection("design_team");
 
         const doc = {
-            name:'Md Al Amin',
-            roles:'Full Stack Developer',
-            mobile:'01644502992'
+            name:'Mr X',
+            roles:'Intern Grafic Designer',
+            mobile:'01644502993'
         }
         const result = await users.insertOne(doc);
         console.log(`A document was inserted with the _id: ${result.insertedId}`);
