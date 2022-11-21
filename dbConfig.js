@@ -7,3 +7,4 @@ const client = new MongoClient(process.env.DATABASE_CLOUD);
 
 console.log('Database connected');
 
+module.exports={client};
