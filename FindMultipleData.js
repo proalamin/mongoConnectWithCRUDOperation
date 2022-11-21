@@ -13,7 +13,6 @@ const FindMultipleData=async()=>{
         }else{
             const users= await cursor.toArray();
 
-            // replace console.dir with your callback to access individual elements
             await users.forEach(user=>console.log(user));
         }
 
