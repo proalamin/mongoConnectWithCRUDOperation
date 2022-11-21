@@ -9,7 +9,7 @@ const FindMultipleData=async()=>{
 
         const cursor = users.find(query);
         if ((await cursor.EstimatedDocumentCount) === 0) {
-            console.log("No documents found!");
+            console.log("No data found!");
         }else{
             const users= await cursor.toArray();
 
